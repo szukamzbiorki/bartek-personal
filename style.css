@@ -1,59 +1,27 @@
 @font-face {
-    font-family: "Gerstner";
-    src: url('assets/fonts/Gerstner\ Programm\ Regular.otf');
+  font-family: 'Gerstner';
+  src: url('assets/fonts/Gerstner\ Programm\ Regular.otf');
 }
 @font-face {
-    font-family: "Swiss";
-    src: url('assets/fonts/Swiss\ 721\ BT\ Medium.otf');
+  font-family: 'Swiss';
+  src: url('assets/fonts/Swiss\ 721\ BT\ Medium.otf');
 }
 
-body{
-    font-family: "Gerstner";
-    background-color:black;
-    color: grey;
+@font-face {
+  font-family: 'E';
+  src: url('assets/fonts/Executive-55Regular.otf');
 }
 
-a{
-    color: grey;
+body {
+  font-family: 'E';
+  background-color: white;
+  color: black;
 }
 
-header{
-    filter:url(#n1);
-    border-top: red solid 1.5apx;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+a {
+  color: grey;
 }
 
-.right{
-    cursor: pointer;
-    text-align: right;
-    max-width: 40ch;
-    display: grid;
-    grid-template-rows: auto 0;
-    transition: grid-template-rows 8s00ms ease;
-}
-
-
-
-.centered{
-    position: absolute;
-    left:50vw;
-    top:50vh;
-    transform: translate(-50%,-50%);
-    width: 500px;
-    height: 500px;
-    background: grey;
-}
-
-.descri{
-    text-align: left;
-    overflow: hidden;
-}
-
-.right:hover{
-    grid-template-rows: auto 1fr;
+main {
+  max-width: 50ch;
 }

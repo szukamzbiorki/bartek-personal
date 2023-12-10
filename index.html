@@ -1,80 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BARTEK PIERŚCIŃSKI</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Info @ Bartek Pierściński</title>
+    <meta name="title" content="Info @ Bartek Pierściński" />
+    <meta name="description" content="Graphic design, Web development" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dev--andreinitu.netlify.app/" />
+    <meta property="og:title" content="Info @ Bartek Pierściński" />
+    <meta property="og:description" content="Graphic design, Web development" />
+    <meta
+      property="og:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://dev--andreinitu.netlify.app/"
+    />
+    <meta property="twitter:title" content="Info @ Bartek Pierściński" />
+    <meta
+      property="twitter:description"
+      content="Graphic design, Web development"
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/images/meta-tags.png"
+    />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
     <!-- <script src="canvas-script.js"></script> -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="left">BARTEK PIERŚCIŃSKI</div>
-        <div class="right">INFO/CONTACT
-            <div class="descri">
-                Bartek Pierściński (Kraków, 2001)
-                <br>
-                <br>
-                
-                Bartek is an enigma in the graphic design world. He works with coding and visual narrative, though no one knows where he learnt these skills. His work often takes the form of intricate, thought-provoking art, leaving viewers with an unsettled feeling and questions they can't answer. Bartek remains silent on his background and past, so the mystery of his identity remains.
-<br><br>
-                CONTACT
-                <br>
-                <a href="mailto:bartoszjpierscinski@gmail.com">bartoszjpierscinski@gmail.com</a>
-                <br>
-                <a href="https://instagram.com/bartekpierscinski">@bartekpierscinski</a>
-            </div>
-        </div>
-    </header>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      Bartek Pierściński (Kraków, 2001)
+      <br /><br />
+      CONTACT
+      <br />
+      <a href="mailto:contact@bartekp.info">contact@bartekp.info</a>
+      <br />
+      <a href="https://instagram.com/bartekpierscinski">@bartekpierscinski</a>
+    </main>
 
     <!-- <div id="canvasholder" class="centered"></div> -->
 
     <svg class="fixed inset-0 transform -translate-x-full">
-        <defs>
-            <filter id="n0">
-                <feTurbulence type="turbulence" baseFrequency="0.001 0.1" numOctaves="5" result="NOISE"></feTurbulence>
-                <feGaussianBlur in="SourceGraphic" result="BLURRED" stdDeviation="4.5"></feGaussianBlur>
-                <feDisplacementMap in2="NOISE" in="BLURRED" scale="50" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
-            </filter>
-            <filter id="n1">
-                <feTurbulence type="fractalNoise" baseFrequency="0.001 0.001" numOctaves="5" result="NOISE" seed="163927"></feTurbulence>
-                <feGaussianBlur in="SourceGraphic" result="BLURRED" stdDeviation="0"></feGaussianBlur>
-                <feDisplacementMap id="displacer" in2="NOISE" in="BLURRED" scale="44" xChannelSelector="R" yChannelSelector="R" result="DISPLACED"></feDisplacementMap>
-            </filter>
-            <filter id="n2" color-interpolation-filters="sRGB">
-                <feTurbulence type="fractalNoise" baseFrequency="0.001 0.001" numOctaves="5" result="NOISE" seed="163927"></feTurbulence>
-                <feGaussianBlur in="SourceGraphic" result="BLURRED" stdDeviation="0"></feGaussianBlur>
-                <feDisplacementMap id="displacer" in2="NOISE" in="BLURRED" scale="15" xChannelSelector="R" yChannelSelector="R" result="DISPLACED"></feDisplacementMap>
+      <defs>
+        <filter id="n0">
+          <feTurbulence
+            type="turbulence"
+            baseFrequency="0.001 0.1"
+            numOctaves="5"
+            result="NOISE"
+          ></feTurbulence>
+          <feGaussianBlur
+            in="SourceGraphic"
+            result="BLURRED"
+            stdDeviation="4.5"
+          ></feGaussianBlur>
+          <feDisplacementMap
+            in2="NOISE"
+            in="BLURRED"
+            scale="50"
+            xChannelSelector="R"
+            yChannelSelector="G"
+          ></feDisplacementMap>
+        </filter>
+        <filter id="n1">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.001 0.001"
+            numOctaves="5"
+            result="NOISE"
+            seed="163927"
+          ></feTurbulence>
+          <feGaussianBlur
+            in="SourceGraphic"
+            result="BLURRED"
+            stdDeviation="0"
+          ></feGaussianBlur>
+          <feDisplacementMap
+            id="displacer"
+            in2="NOISE"
+            in="BLURRED"
+            scale="44"
+            xChannelSelector="R"
+            yChannelSelector="R"
+            result="DISPLACED"
+          ></feDisplacementMap>
+        </filter>
+        <filter id="n2" color-interpolation-filters="sRGB">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.001 0.001"
+            numOctaves="5"
+            result="NOISE"
+            seed="163927"
+          ></feTurbulence>
+          <feGaussianBlur
+            in="SourceGraphic"
+            result="BLURRED"
+            stdDeviation="0"
+          ></feGaussianBlur>
+          <feDisplacementMap
+            id="displacer"
+            in2="NOISE"
+            in="BLURRED"
+            scale="15"
+            xChannelSelector="R"
+            yChannelSelector="R"
+            result="DISPLACED"
+          ></feDisplacementMap>
 
-                <feColorMatrix in="DISPLACED" result="RED" type="matrix" values="0 0 0 0 0
+          <feColorMatrix
+            in="DISPLACED"
+            result="RED"
+            type="matrix"
+            values="0 0 0 0 0
                             0 1 0 0 0
                             0 0 1 0 0
-                            0 0 0 1 0"></feColorMatrix>
-                            
-                <feColorMatrix in="DISPLACED" result="GREEN" type="matrix" values="1 0 0 0 0
+                            0 0 0 1 0"
+          ></feColorMatrix>
+
+          <feColorMatrix
+            in="DISPLACED"
+            result="GREEN"
+            type="matrix"
+            values="1 0 0 0 0
                             0 0 0 0 0
                             0 0 1 0 0
-                            0 0 0 1 0"></feColorMatrix>
-                
-                <feColorMatrix in="DISPLACED" result="BLUE" type="matrix" values="1 0 0 0 0
+                            0 0 0 1 0"
+          ></feColorMatrix>
+
+          <feColorMatrix
+            in="DISPLACED"
+            result="BLUE"
+            type="matrix"
+            values="1 0 0 0 0
                             0 1 0 0 0
                             0 0 0 0 0
-                            0 0 0 1 0"></feColorMatrix>
-                            
-                <feOffset in="RED" dx="-3" dy="0" result="D_RED"></feOffset>
-                <feOffset in="GREEN" dx="0" dy="0" result="D_GREEN"></feOffset>
-                <feOffset in="BLUE" dx="3" dy="0" result="D_BLUE"></feOffset>
+                            0 0 0 1 0"
+          ></feColorMatrix>
 
-                <feBlend in="D_RED" in2="D_BLUE" out="RB" mode="multiply"></feBlend>
-                
-                <feBlend in="D_GREEN" in2="RB" out="RGB" mode="multiply"></feBlend>
+          <feOffset in="RED" dx="-3" dy="0" result="D_RED"></feOffset>
+          <feOffset in="GREEN" dx="0" dy="0" result="D_GREEN"></feOffset>
+          <feOffset in="BLUE" dx="3" dy="0" result="D_BLUE"></feOffset>
 
-                
-            </filter>
-        </defs>
+          <feBlend in="D_RED" in2="D_BLUE" out="RB" mode="multiply"></feBlend>
+
+          <feBlend in="D_GREEN" in2="RB" out="RGB" mode="multiply"></feBlend>
+        </filter>
+      </defs>
     </svg>
-    
-</body>
+  </body>
 </html>
