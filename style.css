@@ -13,13 +13,13 @@
 }
 
 body {
-  font-family: 'E';
+  font-family: 'Swiss';
   background-color: white;
   color: black;
 }
 
 a {
-  color: grey;
+  /* color: grey; */
 }
 
 main {
