@@ -16,6 +16,10 @@
   font-family: 'S';
   src: url('assets/fonts/SelectricUniversOne-Book.otf');
 }
+@font-face {
+  font-family: 'M';
+  src: url('assets/fonts/GrotesqueMTStd.otf');
+}
 
 body {
   font-family: 'S';
