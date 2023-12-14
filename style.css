@@ -12,8 +12,13 @@
   src: url('assets/fonts/Executive-55Regular.otf');
 }
 
+@font-face {
+  font-family: 'S';
+  src: url('assets/fonts/SelectricUniversOne-Book.otf');
+}
+
 body {
-  font-family: 'Swiss';
+  font-family: 'S';
   background-color: white;
   color: black;
 }
