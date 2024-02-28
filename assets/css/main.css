@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+:root {
+	--color: yellow;
+	--white: #ffffff;
+	--black: #000000;
+	--space-s: 4px;
+	--space-m: 8px;
+	--space-l: 6vw;
+}
+
+@media screen and (max-width: 600px) {
+	:root {
+		--space-s: 4px;
+		--space-m: 8px;
+		--space-l: 10vw;
+	}
+}
+
+html {
+	/* background-color: var(--black); */
+	background-color: white;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	color: white;
+	/* background-color: var(--black); */
+	background-color: white;
+}
+
+.wrapper {
+	width: 100vw;
+	min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: calc(var(--header) + 4 * var(--space-m));
+}

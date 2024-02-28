@@ -1,0 +1,102 @@
+@font-face {
+	font-family: 'Font';
+	src: url('/fonts/SelectricUniversOne-Book.otf') format('opentype');
+}
+
+:root {
+	--type-xs: calc(var(--type-s) * 0.7);
+	--type-s: 14px;
+	--type-m: 25px;
+	--type-l: max(3.1vw, 35px);
+	--type-xl: 8vw;
+}
+
+@media screen and (max-width: 600px) {
+	:root {
+		--type-s: 13px;
+		--type-m: 4.5vw;
+		--type-l: 6.5vw;
+		--type-xl: 9vw;
+	}
+}
+
+html,
+body {
+	font-family: 'Font';
+	font-size: var(--type-s);
+	letter-spacing: -0.008rem;
+	line-height: 109%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	@media (hover: hover) {
+		&:hover {
+			color: inherit;
+			& > * {
+				color: inherit;
+			}
+		}
+	}
+}
+
+.helvetica {
+	font-family: 'NHGMedium';
+}
+
+.univers {
+	font-family: 'F';
+	line-height: 90% !important;
+	/* line-height: initial !important; */
+	text-transform: uppercase;
+	padding-top: 0.4em;
+}
+
+.times-italic {
+	font-family: 'TNR-Italic';
+	line-height: 97%;
+
+	&:not(.-type-m) {
+		line-height: 110%;
+	}
+}
+
+.-type-m {
+	font-size: var(--type-m);
+	line-height: 98%;
+	letter-spacing: -0.01em;
+	hyphens: auto;
+}
+
+.-type-l {
+	font-size: var(--type-l);
+	line-height: 92%;
+	letter-spacing: -0.02em;
+	hyphens: auto;
+
+	&:not(.times, .times-italic) {
+		&::before {
+			content: '';
+			margin-bottom: -0.08em;
+			display: table;
+		}
+
+		&::after {
+			content: '';
+			margin-top: -0.1303em;
+			display: table;
+		}
+	}
+
+	&.times {
+		line-height: 102%;
+	}
+}
+
+.-type-xl {
+	font-size: var(--type-xl);
+	line-height: 85%;
+	letter-spacing: -0.02em;
+	hyphens: auto;
+}
