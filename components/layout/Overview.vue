@@ -18,6 +18,6 @@
 	main {
 		height: 80vh;
 		width: 100%;
-		background-color: red;
+		/* background-color: red; */
 	}
 </style>
