@@ -90,7 +90,9 @@
 			grid-column: span 6;
 		}
 		& > .bat {
-			display: none;
+			@media screen and (max-width: 600px) {
+				display: none;
+			}
 		}
 		& > .websites {
 		}
