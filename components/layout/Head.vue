@@ -97,7 +97,7 @@
 	}
 
 	.red {
-		color: red;
+		color: white;
 	}
 
 	*:not(a) {
