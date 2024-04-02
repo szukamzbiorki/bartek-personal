@@ -14,7 +14,8 @@
 			<div class="content">
 				<a href="https://andreinitu.info">andreinitu.info</a>
 				<a href="https://turnus.fun">turnus.fun</a>
-				<a href="https://roots.kabk.nl/a">roots.kabk.nl</a>
+				<!-- <a href="https://roots.kabk.nl/a">roots.kabk.nl</a> -->
+				<a href="https://julesjanssen.biz">julesjanssen.biz</a>
 			</div>
 		</div>
 		<div class="contact">
@@ -26,7 +27,7 @@
 				>
 			</div>
 		</div>
-		<div class="">
+		<div class="bat">
 			<div class="label">Battery</div>
 			<div class="content">
 				<div class="rest">
@@ -58,6 +59,9 @@
 		gap: var(--space-m);
 		width: 100%;
 		background-color: black;
+		@media screen and (max-width: 600px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
 
 		& > div {
 			grid-column: span 2;
@@ -84,6 +88,9 @@
 
 		& > .title {
 			grid-column: span 6;
+		}
+		& > .bat {
+			display: none;
 		}
 		& > .websites {
 		}
