@@ -15,7 +15,8 @@
 				<!-- <a href="https://roots.kabk.nl/a">roots.kabk.nl</a> -->
 				<a href="https://julesjanssen.biz">julesjanssen.biz</a>
 				<a href="https://0000.garden">0000.garden</a>
-				<a href="https://kabk.github.io/go-theses-24/">kabk.github.io [2024 dg theses]</a>
+				<a href="https://kabk.github.io/go-theses-24/">kabk.github.io [2024 GD theses]</a>
+				<a href="https://angelusschnabl.com">angelusschnabl.com</a>
 			</div>
 		</div>
 		<div class="contact">
